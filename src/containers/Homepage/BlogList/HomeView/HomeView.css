@@ -1,0 +1,70 @@
+.homeview::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 10px;
+}
+
+/* pendimg change */
+.homeview {
+  margin-top: 10px;
+}
+.homeviewSingle,
+.homeviewMultiple {
+  width: 46%;
+  float: left;
+}
+
+.hvs-middle {
+  border-top: 2px solid #eee; 
+  border-bottom: 2px solid #eee;
+  padding: 15px 0;
+}
+
+@media (max-width: 800px) {
+  .homeviewMultiple,
+  .homeviewSingle {
+    width: 100%;
+  }
+  .hvs-thumb {
+    float: right !important;
+  }
+}
+
+.homeviewSingle h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.homeviewSingle {
+  margin-right: 6%;
+}
+
+.homeviewp {
+  margin-top: 10px;
+}
+.hvs-post {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.hvs-thumb {
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+.hvs-details {
+  overflow: hidden;
+}
+.hvs-img {
+  width: 100%;
+}
+.hvs-thumbimg{
+  width: 135px; 
+  height: 93px;
+}
+.hvs-more{
+  text-decoration: none;
+  color: rgb(0, 89, 243);
+}

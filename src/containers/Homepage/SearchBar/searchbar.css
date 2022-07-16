@@ -1,0 +1,35 @@
+.search-wrap {
+    display: flex;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #2f2f4e;
+    height: 40px;
+    margin: 30px 0;
+    align-items: flex-start;
+    padding: 10px 25px;
+    gap: 10px;
+    isolation: isolate;
+}
+
+.search-wrap form {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrap input {
+    outline: none;
+    border: none;
+}
+
+.search-wrap span {
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.search-wrap button {
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    padding: .3rem 1rem;
+}
