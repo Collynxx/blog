@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./searchbar.css";
+import SearchIcon from "@mui/icons-material/Search";
+import Sidebar from "../../../components/Sidebar";
 
-const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmit }) => {
-    
+function SearchBar(props) {
+  const { onSearch } = props;
+
+  const [searchText, setSearchText] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const text = e.target.value;
+    setSearchText(text);
+  };
+
   return (
     <div className="search-wrap">
-      <form onSubmit={formSubmit}>
-        <input
-          type="text"
-          onChange={handleSearchKey}
-          placeholder="What are you searching for?"
-          value={value}
-        />
-        {value && <span onClick={clearSearch}>X</span>}
-        <button>Go</button>
-
+      <Sidebar />
+      <form onSubmit={handleSubmit}>
+      <input className="inputP"
+        onChange={(e) => setSearchText(e.target.value)}
+        type="text"
+        value={searchText}
+        placeholder="What are you searching for?"
+      />
       </form>
+      <div className="searchIcon">
+        <SearchIcon />
+      </div>
     </div>
   );
-};
+}
 
 export default SearchBar;
