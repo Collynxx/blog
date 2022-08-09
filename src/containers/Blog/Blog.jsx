@@ -37,7 +37,6 @@ const Blog = () => {
         <EmptyList />
       )}
       <div className="ads">
-        <h1>Advert</h1>
         <img src={wiz} alt="wiz"/>
         <img src={odogwu} alt="odogwu"/>
       </div>

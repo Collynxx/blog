@@ -1,0 +1,30 @@
+
+  .posts {
+    border-right: 2px solid #000;
+    padding: auto;
+  }
+  .edit {
+    padding: 0 70px;
+  }
+
+  .dtexts {
+    display: flex;
+  font-family: Poppins;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .posts {
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+    .half {
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+    .half2 {
+      max-width: 70%;
+    }
+  }
+  
